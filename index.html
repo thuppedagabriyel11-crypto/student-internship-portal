@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Message</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: rgb(252, 252, 253);
+      padding: 22px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      font-size: 20px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 100px;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 40px;
+      border-radius: 16px;
+    }
+
+    /* output box */
+    .output {
+      display: none;
+      max-width: 400px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container" id="formBox">
+    <h1>Find Internship Through Online</h1>
+    <h2>User Form</h2>
+
+    <input type="text" placeholder="Enter Name">
+    <input type="text" placeholder="Enter Phone Number">
+    <input type="email" placeholder="Enter Email">
+
+    <button onclick="showMessage()">Submit</button>
+  </div>
+
+  <!-- OUTPUT -->
+  <div class="output" id="outputBox">
+    <h2>Adhi avvadhamma</h2>
+    <p>Radhu mawa nenu Urike anna 😄😄</p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("formBox").style.display = "none";
+      document.getElementById("outputBox").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
+    
